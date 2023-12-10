@@ -1,0 +1,7 @@
+server:
+  port: 9696
+
+sterling:
+  baseurl: http://localhost:8080
+  endpoints:
+    generate: /api/v1/convert/html/pdf

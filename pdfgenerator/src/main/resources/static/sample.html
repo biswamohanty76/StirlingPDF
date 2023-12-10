@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printable Page</title>
+    <style>
+        /* General styles for both screen and print */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        /* Styles specifically for print media */
+        @media print {
+            body {
+                color: #000; /* Set text color for print */
+            }
+
+            h1 {
+                page-break-before: always; /* Force a page break before each h1 element */
+            }
+
+            p {
+                text-align: justify; /* Justify paragraphs for better readability in print */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Printable Page</h1>
+    <p>This is a sample HTML page with CSS styles for paged media.</p>
+    <p>When you print this page, it will apply specific styles for better print readability.</p>
+    <h1>Another Section</h1>
+    <p>This is another section of the page.</p>
+</body>
+</html>
